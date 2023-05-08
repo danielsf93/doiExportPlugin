@@ -116,12 +116,13 @@ oi gente
 									v-model="selectedSubmissions"
 								/>
 								<span class="listPanel__itemSubTitle">
-									{{ localize(item.publications.find(p => p.id == item.currentPublicationId).fullTitle) }}
-								</span>
+									{{ localize(item.publications.find(p => p.id == item.currentPublicationId).fullTitle) }}<br>
+									testeeeee
+								<hr>
+							
+									</span>
 							</label>
-							<pkp-button element="a" :href="item.urlWorkflow" style="margin-left: auto;">
-								{{ __('common.view') }}
-							</pkp-button>
+							
 						</div>
 					</template>
 				</submissions-list-panel>
